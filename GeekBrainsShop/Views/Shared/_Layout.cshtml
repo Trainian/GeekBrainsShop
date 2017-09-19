@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title – приложение ASP.NET</title>
@@ -35,25 +35,26 @@
         <div class="container">
             @RenderBody()
         </div>
+    </div>
 
-    <hr />
-    <footer>
-        <div id="footers">
-            <p id="big">Дизайн</p>
-            <p>hrenden@inputmail.ru</p>
-            <p>©Все права защищены!</p>
-            <p>Design by Vitali Zakharoff</p>
-        </div>
-        <div id="social">
-            <div id="vk"></div>
-            <div id="facebook"></div>
-            <div id="twitter"></div>
-        </div>
-        <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
-    </footer>
+        <hr />
+        <footer>
+            <div id="footers">
+                <p id="big">Дизайн</p>
+                <p>hrenden@inputmail.ru</p>
+                <p>©Все права защищены!</p>
+                <p>Design by Vitali Zakharoff</p>
+            </div>
+            <div id="social">
+                <div id="vk"></div>
+                <div id="facebook"></div>
+                <div id="twitter"></div>
+            </div>
+            <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+        </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
