@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – приложение ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="images/top_logo.png">
+    </div>
+
+    <div class="body_style">
+        <div class="menu">
+            <ul class="ul_menu">
+                <li><a href="#">Главная</a></li>
+                <div class="ShowCatalogs">
+                    <li>
+                        <a href="catalog.html">Каталог</a>
+                        <ul>
+                            <li><a href="catalog.html">Женщинам</a></li>
+                            <li><a href="catalog.html">Мужчинам</a></li>
+                            <li><a href="catalog.html">Детям</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    @RenderBody()
+    <hr />
+    <footer>
+        <div id="footers">
+            <p id="big">Дизайн</p>
+            <p>hrenden@inputmail.ru</p>
+            <p>©Все права защищены!</p>
+            <p>Design by Vitali Zakharoff</p>
+        </div>
+        <div id="social">
+            <div id="vk"></div>
+            <div id="facebook"></div>
+            <div id="twitter"></div>
+        </div>
+        <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+    </footer>
+
+
+</body>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
