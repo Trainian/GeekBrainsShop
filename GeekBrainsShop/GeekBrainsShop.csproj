@@ -150,6 +150,24 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\brands\dixer.png" />
+    <Content Include="Content\Images\brands\instreet.png" />
+    <Content Include="Content\Images\brands\marcotozzi.png" />
+    <Content Include="Content\Images\brands\rieker.png" />
+    <Content Include="Content\Images\brands\thomasmunz.png" />
+    <Content Include="Content\Images\brands\zenden.png" />
+    <Content Include="Content\Images\classic_1.jpg" />
+    <Content Include="Content\Images\classic_1_small.jpg" />
+    <Content Include="Content\Images\classic_1_small.png" />
+    <Content Include="Content\Images\classic_2.jpg" />
+    <Content Include="Content\Images\classic_2_small.jpg" />
+    <Content Include="Content\Images\classic_3.jpg" />
+    <Content Include="Content\Images\classic_3_small.jpg" />
+    <Content Include="Content\Images\Hrenden.jpg" />
+    <Content Include="Content\Images\social.jpg" />
+    <Content Include="Content\Images\sport_1.jpg" />
+    <Content Include="Content\Images\sport_1_small.jpg" />
+    <Content Include="Content\Images\top_logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
