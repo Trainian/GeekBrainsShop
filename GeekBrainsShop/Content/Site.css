@@ -20,7 +20,7 @@
 
 .menu {
     display: flex;
-    margin-right: 150px;
+    margin: 80px 150px 0px 0px;
     width: 150px;
     height: 200px;
     justify-content: space-around;
