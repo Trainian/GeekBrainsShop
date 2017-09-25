@@ -1,26 +1,20 @@
-﻿@{
+﻿@model IEnumerable<GeekBrainsShop.Domain.Employees.Footwear>
+@{
     ViewBag.Title = "GeekBrainsShop";
 }
 
     <div class="catalogs">
-        <div>
-            <div>Hrenden collection</div>
-            <div><img src="~/Content/Images/classic_1_small.png" alt=""></div>
-            <div>2100руб.<s>2800руб.</s></div>
-        </div>
-        <div>
-            <div>Hrenden collection</div>
-            <div><img src="~/Content/Images/classic_2_small.jpg" alt=""></div>
-            <div>2800руб.</div>
-        </div>
-        <div>
-            <div>Hrenden collection</div>
-            <div><img src="~/Content/Images/classic_3_small.jpg" alt=""></div>
-            <div>2500руб.</div>
-        </div>
-        <div>
-            <div>Dixer</div>
-            <div><img src="~/Content/Images/sport_1_small.jpg" alt=""></div>
-            <div>1800руб.</div>
-        </div>
+        @foreach (var item in Model)
+        {            
+            <div>
+                <div>@item.Trademark.TrademarkName</div>
+                <div><img src= "@item.ImageLink" alt=""></div>
+                <div>@item.Price руб. 
+                @if (item.SalePrice != null)
+                {
+                    <s>@item.SalePrice руб.</s>
+                }
+                </div>
+            </div>
+        }
     </div>

@@ -201,9 +201,6 @@ body > footer > p {
         color: red;
     }
 
-    .catalogs > div:nth-child(1) {
-        background-color: #f1f1f1;
-    }
 
 .catalog {
     display: flex;
