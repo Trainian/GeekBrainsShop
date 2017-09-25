@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeekBrainsShop.DAL.Employees;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,12 @@ namespace GeekBrainsShop.Controllers
 {
     public class HomeController : Controller
     {
+        private LibraryContext dbContext = new LibraryContext();
+
         public ActionResult Index()
         {
-            return View();
+            var employee = dbContext.Footwear;
+            return View(employee.ToList());
         }
 
         public ActionResult Contact()

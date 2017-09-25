@@ -16,13 +16,13 @@ namespace GeekBrainsShop.Domain.Employees
         public int Price { get; set; } // Стоимость начальная
 
         [DisplayName("Цена cо скидкой")]
-        public int? SalePrice { get; set; } // Стоимость со скидкой, если есть
+        public int? SalePrice { get; set; } // Старая цена без скидки, если есть
 
         public string ImageLink { get; set; } // Ссылка на картинку
 
         public int TrademarkId { get; set; }
 
-        public virtual Trademark Trademark { get; set; }// Торговая марка
+        public virtual Trademark Trademark { get; set; } // Торговая марка
 
     }
 
