@@ -167,7 +167,7 @@
     <Content Include="Content\Images\social.jpg" />
     <Content Include="Content\Images\sport_1.jpg" />
     <Content Include="Content\Images\sport_1_small.jpg" />
-    <Content Include="Content\Images\top_logo.png" />
+    <Content Include="Content\Images\top_logo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
