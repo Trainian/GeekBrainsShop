@@ -199,7 +199,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
@@ -221,6 +220,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeekBrainsShop.DAL\GeekBrainsShop.DAL.csproj">
+      <Project>{9b3afca1-63bb-44f3-9ec0-fe8d69116db0}</Project>
+      <Name>GeekBrainsShop.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeekBrainsShop.Domain\GeekBrainsShop.Domain.csproj">
+      <Project>{203d3fbb-a4a4-4ac8-8a01-3511cfba6fe5}</Project>
+      <Name>GeekBrainsShop.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeekBrainsShop.Service\GeekBrainsShop.Service.csproj">
+      <Project>{a0560711-d6ca-4743-b1a0-8e004cd9248a}</Project>
+      <Name>GeekBrainsShop.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeekBrainsShop.WCF\GeekBrainsShop.WCF.csproj">
+      <Project>{1b38c551-67b4-4e04-b864-1c659ee1759b}</Project>
+      <Name>GeekBrainsShop.WCF</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

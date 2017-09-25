@@ -17,7 +17,7 @@
     <div class="body_style">
         <div class="menu">
             <ul class="ul_menu">
-                <li><a href="#">Главная</a></li>
+                <li><a href=@Url.Action("Index", "Home")>Главная</a></li>
                 <div class="ShowCatalogs">
                     <li>
                         <a href="catalog.html">Каталог</a>
@@ -32,6 +32,14 @@
             </ul>
         </div>
         <div class="container">
+            <div class="brands">
+                <img src="~/Content/Images/brands/instreet.png" alt="instreet">
+                <img src="~/Content/Images/brands/zenden.png" alt="zenden">
+                <img src="~/Content/Images/brands/dixer.png" alt="dixer">
+                <img src="~/Content/Images/brands/rieker.png" alt="riker">
+                <img src="~/Content/Images/brands/thomasmunz.png" alt="thomasmunz">
+                <img src="~/Content/Images/brands/marcotozzi.png" alt="marcotozzi">
+            </div>
             @RenderBody()
         </div>
     </div>
