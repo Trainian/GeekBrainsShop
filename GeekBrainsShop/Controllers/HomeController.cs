@@ -9,7 +9,7 @@ namespace GeekBrainsShop.Controllers
 {
     public class HomeController : Controller
     {
-        private LibraryContext dbContext = new LibraryContext();
+        private static LibraryContext dbContext = new LibraryContext();
 
         public ActionResult Index()
         {
