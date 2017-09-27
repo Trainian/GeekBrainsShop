@@ -24,6 +24,8 @@ namespace GeekBrainsShop.Domain.Employees
 
         public bool IsTop { get; set; } // Если Топ выбора
 
+        public bool IsNew { get; set; } // Если Новинка
+
         public int TrademarkId { get; set; }
 
         public virtual Trademark Trademark { get; set; } // Торговая марка
@@ -54,6 +56,9 @@ namespace GeekBrainsShop.Domain.Employees
                 .IsRequired();
 
             Property(x => x.IsTop)
+                .IsRequired();
+
+            Property(x => x.IsNew)
                 .IsRequired();
 
             HasRequired(x => x.Trademark);

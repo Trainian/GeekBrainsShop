@@ -20,8 +20,12 @@
                         }
                         @if (item.IsTop)
                         {
+                            <b><img src="~/Content/Images/Hit.png" alt="Top" /></b>
+                        }  
+                        @if (item.IsNew)
+                        {
                             <b><img src="~/Content/Images/New.png" alt="Top" /></b>
-                        }    
+                        }
                     </div>
                 </div>
                 <div><img src= "@item.ImageLink" alt=""></div>
