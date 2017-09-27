@@ -20,6 +20,10 @@ namespace GeekBrainsShop.Domain.Employees
 
         public string ImageLink { get; set; } // Ссылка на картинку
 
+        public bool IsSale { get; set; } // Если распродажа
+
+        public bool IsTop { get; set; } // Если Топ выбора
+
         public int TrademarkId { get; set; }
 
         public virtual Trademark Trademark { get; set; } // Торговая марка
@@ -44,6 +48,12 @@ namespace GeekBrainsShop.Domain.Employees
 
             Property(x => x.ImageLink)
                 .HasMaxLength(500)
+                .IsRequired();
+
+            Property(x => x.IsSale)
+                .IsRequired();
+
+            Property(x => x.IsTop)
                 .IsRequired();
 
             HasRequired(x => x.Trademark);

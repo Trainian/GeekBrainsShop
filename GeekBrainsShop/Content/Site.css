@@ -15,12 +15,12 @@ body /* Задний фон для ВСЕХ страниц*/ {
 
 .body_style {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .menu {
     display: flex;
-    margin: 80px 50px 0px 0px;
+    margin: 80px 0px 0px 0px;
     width: 150px;
     height: 200px;
     justify-content: space-around;
@@ -197,10 +197,6 @@ body > footer > p {
     font-family: Impact;
 }
 
-    .catalogs > div:nth-child(1) > div:nth-child(3) > s:nth-child(1) {
-        color: red;
-    }
-
 
 .catalog {
     display: flex;
@@ -208,10 +204,32 @@ body > footer > p {
     flex-wrap: wrap;
 }
 
-    .catalog > div:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(2) {
-        color: red;
-    }
 
-    .catalog > div:nth-child(1) {
-        background-color: #f1f1f1;
-    }
+.SalePrice  
+{    
+    color: red;
+}
+
+.TradeMark
+{
+    
+    display: flex;
+    justify-content:  flex-end;
+    max-height: 22px;
+    z-index: 3;
+}
+
+.TradeMark > div:nth-child(1)
+{    
+    width: 20%;
+}
+
+.TradeMark > div:nth-child(2)
+{    
+    width: 60%;
+}
+
+.TradeMark > div:nth-child(3)
+{    
+    width: 20%;
+}

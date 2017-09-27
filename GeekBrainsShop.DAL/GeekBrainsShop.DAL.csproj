@@ -54,6 +54,10 @@
     <Compile Include="Migrations\201709251342364_Initial.Designer.cs">
       <DependentUpon>201709251342364_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709271644099_Add_IsSale_and_IsTop.cs" />
+    <Compile Include="Migrations\201709271644099_Add_IsSale_and_IsTop.Designer.cs">
+      <DependentUpon>201709271644099_Add_IsSale_and_IsTop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709251342364_Initial.resx">
       <DependentUpon>201709251342364_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271644099_Add_IsSale_and_IsTop.resx">
+      <DependentUpon>201709271644099_Add_IsSale_and_IsTop.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

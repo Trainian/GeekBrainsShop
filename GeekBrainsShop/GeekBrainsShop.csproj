@@ -169,7 +169,10 @@
     <Content Include="Content\Images\classic_2_small.jpg" />
     <Content Include="Content\Images\classic_3.jpg" />
     <Content Include="Content\Images\classic_3_small.jpg" />
+    <Content Include="Content\Images\Hit.png" />
     <Content Include="Content\Images\Hrenden.jpg" />
+    <Content Include="Content\Images\New.png" />
+    <Content Include="Content\Images\Sale.png" />
     <Content Include="Content\Images\social.jpg" />
     <Content Include="Content\Images\sport_1.jpg" />
     <Content Include="Content\Images\sport_1_small.jpg" />
