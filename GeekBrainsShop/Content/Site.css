@@ -1,235 +1,189 @@
-body /* Задний фон для ВСЕХ страниц*/ {
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
+body {
+ background-color:#f8f8f8;
+ display:flex;
+ flex-direction:column
 }
-
 .header {
-    display: flex;
-    justify-content: center;
+ display:flex;
+ justify-content:center
 }
-
-    .header img {
-        width: 1000px;
-    }
-
+.header img {
+ width:1000px
+}
 .body_style {
-    display: flex;
-    justify-content: space-evenly;
+ display:flex;
+ justify-content:space-evenly
 }
-
 .menu {
-    display: flex;
-    margin: 80px 0px 0px 0px;
-    width: 150px;
-    height: 200px;
-    justify-content: space-around;
-    flex-direction: column;
+ display:flex;
+ margin:80px 0 0 0;
+ width:150px;
+ height:200px;
+ justify-content:space-around;
+ flex-direction:column
 }
-
-.ShowCatalogs:hover li:nth-child(1) > ul {
-    transition: .8s;
-    font-size: 20px;
+.ShowCatalogs:hover li:nth-child(1)>ul {
+ transition:.8s;
+ font-size:20px
 }
-
-.ShowCatalogs > li:nth-child(1) > ul {
-    font-style: normal;
-    font-size: 1px;
-    text-align: left;
-    list-style-type: unset;
-    margin-left: -20px;
-    transition: .8s;
-    transition-delay: .4s;
+.ShowCatalogs>li:nth-child(1)>ul {
+ font-style:normal;
+ font-size:1px;
+ text-align:left;
+ list-style-type:unset;
+ margin-left:-20px;
+ transition:.8s;
+ transition-delay:.4s
 }
-
 .brands {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 0px 20px 0px;
-    height: 20px;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ align-items:center;
+ margin:30px 0 20px 0;
+ height:20px
 }
-
-.ul_menu /* Стили для меню */ {
-    list-style-type: none;
-    font-style: italic;
-    font-size: 20px;
-    padding: 0px 20px;
-    overflow: hidden;
-    text-align: left;
+.ul_menu {
+ list-style-type:none;
+ font-style:italic;
+ font-size:20px;
+ padding:0 20px;
+ overflow:hidden;
+ text-align:left
 }
-
-    .ul_menu li [href] /* Цвет для ссылок в меню*/ {
-        color: green;
-    }
-
-    .ul_menu li [href="#"] /* Цвет для текущей ссылки*/ {
-        color: gray;
-    }
-
-    .ul_menu li [href]:hover {
-        color: greenyellow;
-    }
-
-    .ul_menu li [href="#"]:hover {
-        color: #ccc;
-    }
-
+.ul_menu li [href] {
+ color:green
+}
+.ul_menu li [href="#"] {
+ color:gray
+}
+.ul_menu li [href]:hover {
+ color:#adff2f
+}
+.ul_menu li [href="#"]:hover {
+ color:#ccc
+}
 .container {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
+ width:800px;
+ display:flex;
+ flex-direction:column
 }
-
 .catalogs {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+ display:flex;
+ flex-direction:row;
+ justify-content:flex-start;
+ flex-wrap:wrap
 }
-
-    .catalogs > div, .menu, .catalog div {
-        border-radius: 6px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #e2dede;
-        background-color: #ffffff;
-    }
-
-    .catalogs > div {
-        width: 220px;
-        height: 200px;
-        justify-content: space-around;
-        text-align: center;
-        margin: 10px;
-        flex-direction: column;
-        display: flex;
-    }
-
+.catalogs>div,.menu,.catalog div {
+ border-radius:6px;
+ border-style:solid;
+ border-width:1px;
+ border-color:#e2dede;
+ background-color:#fff
+}
+.catalogs>div {
+ width:220px;
+ height:200px;
+ justify-content:space-around;
+ text-align:center;
+ margin:10px;
+ flex-direction:column;
+ display:flex;
+ text-shadow: 2px 2px 2px grey;
+}
 #Hrenden {
-    width: 582px;
-    height: 86px;
-    float: left;
+ width:582px;
+ height:86px;
+ float:left
 }
-
-H3 /* Натройка Заголовков */ {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #eaeaea;
+H3 {
+ color:#000;
+ font-size:18px;
+ font-weight:400;
+ background-color:#eaeaea
 }
-
-.listDesc /* Меняем отображение списка*/ {
-    list-style-type: decimal;
+.listDesc {
+ list-style-type:decimal
 }
-
-.SDescription /* Краткое описание */ {
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
+.SDescription {
+ color:#707070;
+ font-size:14px;
+ font-style:italic;
+ line-height:16px
 }
-
-.Description /* Полное описание */ {
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
+.Description {
+ color:#484343;
+ font-size:16px;
+ font-weight:400;
+ line-height:24px;
+ text-align:left
 }
-
 .formStyle {
-    color: green;
-    font-size: 13px;
-    font-weight: 400;
+ color:green;
+ font-size:13px;
+ font-weight:400
 }
-
-    .formStyle [type="text"], .formStyle [name="TextArea"] {
-        color: #00b703;
-        font-size: 16px;
-        font-weight: 100;
-        font-style: italic;
-        text-transform: capitalize;
-    }
-
+.formStyle [type="text"],.formStyle [name="TextArea"] {
+ color:#00b703;
+ font-size:16px;
+ font-weight:100;
+ font-style:italic;
+ text-transform:capitalize
+}
 .IMGborder {
-    border: 2px solid black;
+ border:2px solid #000
 }
-
 .formStyle [name="Email"]:focus {
-    background-color: gray;
-    color: gold;
+ background-color:gray;
+ color:#ffd700
 }
-
-table, td, th {
-    width: 350px;
-    border: 1px solid grey;
+table,td,th {
+ width:350px;
+ border:1px solid grey
 }
-
 td {
-    text-align: left;
+ text-align:left
 }
-
-
 footer {
-    height: 250px;
-    text-align: center;
-    background-color: #3d3d3d;
-    color: white;
-    font-family: 'Myriad Pro';
+ height:250px;
+ text-align:center;
+ background-color:#3d3d3d;
+ color:#fff;
+ font-family:'Myriad Pro'
 }
-
 .catalog div {
-    padding: 5px;
-    margin: 5px;
+ padding:5px;
+ margin:5px
 }
-
-body > footer:nth-child(4) > p:nth-child(1) {
-    font-size: 40px;
+body>footer:nth-child(4)>p:nth-child(1) {
+ font-size:40px
 }
-
-body > footer > p {
-    margin: 28px;
+body>footer>p {
+ margin:28px
 }
-
 .catalogs {
-    font-family: Impact;
+ font-weight:900;
 }
-
-
 .catalog {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+ display:flex;
+ justify-content:flex-start;
+ flex-wrap:wrap
 }
-
-
-.SalePrice  
-{    
-    color: red;
+.SalePrice {
+ color:red
 }
-
-.TradeMark
-{
-    
-    display: flex;
-    justify-content:  flex-end;
-    max-height: 22px;
-    z-index: 3;
+.TradeMark {
+ display:flex;
+ justify-content:flex-end;
+ max-height:22px;
+ z-index:3
 }
-
-.TradeMark > div:nth-child(1)
-{    
-    width: 20%;
+.TradeMark>div:nth-child(1) {
+ width:20%
 }
-
-.TradeMark > div:nth-child(2)
-{    
-    width: 60%;
+.TradeMark>div:nth-child(2) {
+ width:60%
 }
-
-.TradeMark > div:nth-child(3)
-{    
-    width: 20%;
+.TradeMark>div:nth-child(3) {
+ width:20%
 }
