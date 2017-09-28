@@ -5,36 +5,41 @@
 
     <div class="catalogs">
         @foreach (var item in Model)
-        {            
-            <div>
-                <div class="TradeMark">
-                    <div>
+        {
+            <a href="@Url.Action("Details", "Catalog", item.FootwearId)">
+                <div>
+                    <div class="TradeMark">
+                        <div>
+                        </div>
+                        <div>
+                            @item.Trademark.TrademarkName
+                        </div>
+                        <div>
+                            @if (item.IsSale)
+                            {
+                                <b><img src="~/Content/Images/Sale.png" alt="Sale" /></b>
+                            }
+                            @if (item.IsTop)
+                            {
+                                <b><img src="~/Content/Images/Hit.png" alt="Top" /></b>
+                            }
+                            @if (item.IsNew)
+                            {
+                                <b><img src="~/Content/Images/New.png" alt="Top" /></b>
+                            }
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="@item.ImageLink" alt="">
                     </div>
                     <div>
-                        @item.Trademark.TrademarkName
-                    </div>
-                    <div>
-                        @if (item.IsSale)
-                        {
-                            <b><img src="~/Content/Images/Sale.png" alt="Sale" /></b>
-                        }
-                        @if (item.IsTop)
-                        {
-                            <b><img src="~/Content/Images/Hit.png" alt="Top" /></b>
-                        }  
-                        @if (item.IsNew)
-                        {
-                            <b><img src="~/Content/Images/New.png" alt="Top" /></b>
-                        }
-                    </div>
-                </div>
-                <div><img src= "@item.ImageLink" alt=""></div>
-                <div>@item.Price.ToString("# руб.")
-                @if (item.SalePrice != null)
-                {                    
-                    <s class="SalePrice">@item.SalePrice.Value.ToString("# руб.")</s>
-                }
+                        @item.Price.ToString("# руб.")
+                    @if (item.SalePrice != null)
+                    {
+                        <s class="SalePrice">@item.SalePrice.Value.ToString("# руб.")</s>
+                    }
                 </div>
             </div>
+        </a>
         }
     </div>

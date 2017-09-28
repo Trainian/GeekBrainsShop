@@ -1,0 +1,74 @@
+﻿@model GeekBrainsShop.Domain.Employees.Footwear
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Footwear</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Trademark.TrademarkName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trademark.TrademarkName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsTop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsTop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsNew)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsNew)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FootwearId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

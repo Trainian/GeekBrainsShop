@@ -89,7 +89,7 @@ body {
  margin:10px;
  flex-direction:column;
  display:flex;
- text-shadow: 2px 2px 2px grey;
+ text-shadow:2px 2px 2px grey
 }
 #Hrenden {
  width:582px;
@@ -162,7 +162,7 @@ body>footer>p {
  margin:28px
 }
 .catalogs {
- font-weight:900;
+ font-weight:900
 }
 .catalog {
  display:flex;
@@ -187,3 +187,15 @@ body>footer>p {
 .TradeMark>div:nth-child(3) {
  width:20%
 }
+
+.image img {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+.image img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
