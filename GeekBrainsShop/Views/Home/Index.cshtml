@@ -6,7 +6,7 @@
     <div class="catalogs">
         @foreach (var item in Model)
         {
-            <a href="@Url.Action("Details", "Catalog", item.FootwearId)">
+            <a href="@Url.Action("Details", "Catalog", new { id = item.FootwearId})">
                 <div>
                     <div class="TradeMark">
                         <div>

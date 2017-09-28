@@ -22,7 +22,6 @@ namespace GeekBrainsShop.Controllers
             return View(footwear.ToList());
         }
 
-        // GET: Catalog/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)

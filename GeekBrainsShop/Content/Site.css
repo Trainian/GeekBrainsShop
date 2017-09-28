@@ -74,14 +74,14 @@ body {
  justify-content:flex-start;
  flex-wrap:wrap
 }
-.catalogs>div,.menu,.catalog div {
+.catalogs>a >div,.menu,.catalog div {
  border-radius:6px;
  border-style:solid;
  border-width:1px;
  border-color:#e2dede;
  background-color:#fff
 }
-.catalogs>div {
+.catalogs>a> div {
  width:220px;
  height:200px;
  justify-content:space-around;
@@ -91,6 +91,14 @@ body {
  display:flex;
  text-shadow:2px 2px 2px grey
 }
+
+.catalogs > a[href] 
+{
+  
+  text-decoration: black;
+  color: black;
+}
+
 #Hrenden {
  width:582px;
  height:86px;
@@ -187,15 +195,13 @@ body>footer>p {
 .TradeMark>div:nth-child(3) {
  width:20%
 }
-
 .image img {
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- -webkit-transition: all 1s ease-out;
- }
- 
-.image img:hover{
- -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);
- }
+ -moz-transition:all 1s ease-out;
+ -o-transition:all 1s ease-out;
+ -webkit-transition:all 1s ease-out
+}
+.image img:hover {
+ -webkit-transform:scale(1.1);
+ -moz-transform:scale(1.1);
+ -o-transform:scale(1.1)
+}
