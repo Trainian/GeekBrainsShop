@@ -15,6 +15,15 @@
             @Html.DisplayNameFor(model => model.Trademark.TrademarkName)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.VendorCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxSize)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
@@ -41,13 +50,22 @@
             @Html.DisplayFor(modelItem => item.Trademark.TrademarkName)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.VendorCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxSize)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.SalePrice)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ImageLink)
+            <img src="@item.ImageLink" alt="Image">
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IsSale)

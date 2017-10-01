@@ -25,7 +25,7 @@
                             }
                             @if (item.IsNew)
                             {
-                                <b><img src="~/Content/Images/New.png" alt="Top" /></b>
+                                <b><img src="~/Content/Images/New.png" alt="New" /></b>
                             }
                         </div>
                     </div>
@@ -33,10 +33,14 @@
                         <img src="@item.ImageLink" alt="">
                     </div>
                     <div>
-                        @item.Price.ToString("# руб.")
                     @if (item.SalePrice != null)
                     {
-                        <s class="SalePrice">@item.SalePrice.Value.ToString("# руб.")</s>
+                        @item.SalePrice.Value.ToString("# руб.")
+                        <s class="SalePrice">@item.Price.ToString("# руб.")</s>
+                    }
+                    else
+                    {
+                        @item.Price.ToString("# руб.")
                     }
                 </div>
             </div>

@@ -4,70 +4,26 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Footwear</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Trademark.TrademarkName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Trademark.TrademarkName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SalePrice)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SalePrice)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageLink)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImageLink)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsSale)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsSale)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsTop)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsTop)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsNew)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsNew)
-        </dd>
-
-    </dl>
+<div class="container">
+    <H2>@Model.VendorCode</H2>
+    <a href="@Model.ImageLink" target="_blank"><img src="@Model.ImageLink" alt="@Model.ImageLink" width="375" height="230" class="IMGborder" /></a>
+    <H3>Описание товара</H3>
+    <p class="SDescription">Мужские туфли ZENDEN collection выполнены из натуральных материалов и комбинированных материалов, благодаря чему сохраняется достойная цена и качество.</p>
+    <H3>Характеристики товара</H3>
+    <ul class="listDesc">
+        <li><b>Сезон</b> --- <em>Всесезонная</em></li>
+        <li><b>Высота каблука</b> --- <em>3</em></li>
+        <li><b>Материал подкладки</b> --- <em>Кожа</em></li>
+        <li><b>Материал подошвы</b> --- <em>Резина</em></li>
+        <li><b>Материал стельки</b> --- <em>К.кожа-кожа</em></li>
+        <li><b>Для</b> --- <em>Муж.</em></li>
+        <li><b>Cтиль</b> --- <em>Высокий класс</em></li>
+    </ul>
+    <H3>Подробное описание товара</H3>
+    <p class="Description">Мужские туфли ZENDEN collection выполнены из комбинированных материалов, благодаря чему сохраняется достойная цена и качество. Подошва выполнена из Резины, что позволит вам не скользить на поверхностях. Подклад выполнен из натуральных материалов, что значит для вас прекрасные ощущения в течении всего дня.</p>
 </div>
+	</div>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.FootwearId }) |
     @Html.ActionLink("Back to List", "Index")

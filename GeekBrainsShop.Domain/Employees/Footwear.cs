@@ -12,6 +12,12 @@ namespace GeekBrainsShop.Domain.Employees
     {
         public int FootwearId { get; set; }
 
+        public string VendorCode { get; set; }
+
+        public int MinSize { get; set; }
+
+        public int MaxSize { get; set; }
+
         [DisplayName("Цена")]
         public int Price { get; set; } // Стоимость начальная
 
@@ -40,6 +46,16 @@ namespace GeekBrainsShop.Domain.Employees
 
             Property(x => x.FootwearId)
                 .HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity)
+                .IsRequired();
+
+            Property(x => x.VendorCode)
+                .HasMaxLength(250)
+                .IsRequired();
+
+            Property(x => x.MinSize)
+                .IsRequired();
+
+            Property(x => x.MaxSize)
                 .IsRequired();
 
             Property(x => x.Price)
