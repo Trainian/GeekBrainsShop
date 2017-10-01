@@ -24,6 +24,8 @@ namespace GeekBrainsShop.Domain.Employees
         [DisplayName("Цена cо скидкой")]
         public int? SalePrice { get; set; } // Старая цена без скидки, если есть
 
+        public string Subscribe { get; set; } // Описание модели
+
         public string ImageLink { get; set; } // Ссылка на картинку
 
         public bool IsSale { get; set; } // Если распродажа
@@ -35,6 +37,10 @@ namespace GeekBrainsShop.Domain.Employees
         public int TrademarkId { get; set; }
 
         public virtual Trademark Trademark { get; set; } // Торговая марка
+
+        public int SeasonId { get; set; }
+
+        public virtual Season Season { get; set; } // Сезон модели
 
     }
 
@@ -64,6 +70,10 @@ namespace GeekBrainsShop.Domain.Employees
             Property(x => x.SalePrice)
                 .IsOptional();
 
+            Property(x => x.Subscribe)
+                .HasMaxLength(2500)
+                .IsRequired();
+
             Property(x => x.ImageLink)
                 .HasMaxLength(500)
                 .IsRequired();
@@ -78,6 +88,8 @@ namespace GeekBrainsShop.Domain.Employees
                 .IsRequired();
 
             HasRequired(x => x.Trademark);
+
+            HasRequired(x => x.Season);
         }
     }
 }

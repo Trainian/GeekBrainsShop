@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employees\Footwear.cs" />
+    <Compile Include="Employees\Season.cs" />
     <Compile Include="Employees\Trademark.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B3AFCA1-63BB-44F3-9EC0-FE8D69116DB0}</ProjectGuid>
+    <ProjectGuid>{A3EBA9BF-7648-43DD-92A2-B0A6D7A26718}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GeekBrainsShop.DAL</RootNamespace>
@@ -49,25 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\LibraryContext.cs" />
-    <Compile Include="Migrations\201709251342364_Initial.cs" />
-    <Compile Include="Migrations\201709251342364_Initial.Designer.cs">
-      <DependentUpon>201709251342364_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201709271644099_Add_IsSale_and_IsTop.cs" />
-    <Compile Include="Migrations\201709271644099_Add_IsSale_and_IsTop.Designer.cs">
-      <DependentUpon>201709271644099_Add_IsSale_and_IsTop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201709272038026_Add_IsNew.cs" />
-    <Compile Include="Migrations\201709272038026_Add_IsNew.Designer.cs">
-      <DependentUpon>201709272038026_Add_IsNew.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201709302006426_MinMaxSizeAndVendorCode.cs" />
-    <Compile Include="Migrations\201709302006426_MinMaxSizeAndVendorCode.Designer.cs">
-      <DependentUpon>201709302006426_MinMaxSizeAndVendorCode.cs</DependentUpon>
+    <Compile Include="Contexts\LibraryContext.cs" />
+    <Compile Include="Migrations\201710011928114_Init.cs" />
+    <Compile Include="Migrations\201710011928114_Init.Designer.cs">
+      <DependentUpon>201710011928114_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GeekBrainsShop.Domain\GeekBrainsShop.Domain.csproj">
@@ -76,21 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709251342364_Initial.resx">
-      <DependentUpon>201709251342364_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709271644099_Add_IsSale_and_IsTop.resx">
-      <DependentUpon>201709271644099_Add_IsSale_and_IsTop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709272038026_Add_IsNew.resx">
-      <DependentUpon>201709272038026_Add_IsNew.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709302006426_MinMaxSizeAndVendorCode.resx">
-      <DependentUpon>201709302006426_MinMaxSizeAndVendorCode.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710011928114_Init.resx">
+      <DependentUpon>201710011928114_Init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

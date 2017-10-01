@@ -24,11 +24,13 @@
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
         public virtual DbSet<Footwear> Footwear { get; set; }
         public virtual DbSet<Trademark> Trademark { get; set; }
+        public virtual DbSet<Season> Season { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new FootwearConfiguration());
             modelBuilder.Configurations.Add(new TrademarkConfiguration());
+            modelBuilder.Configurations.Add(new SeasonConfiguration());
         }
     }
 
