@@ -15,22 +15,21 @@
     </div>
 
     <div class="body_style">
+
         <div class="menu">
-            <ul class="ul_menu">
-                <li><a href=@Url.Action("Index", "Home")>Главная</a></li>
-                <div class="ShowCatalogs">
-                    <li>
-                        <a href=@Url.Action("Index", "Catalog")>Каталог</a>
-                        <ul>
-                            <li><a href=@Url.Action("Index", "Catalog")>Женщинам</a></li>
-                            <li><a href=@Url.Action("Index", "Catalog")>Мужчинам</a></li>
-                            <li><a href=@Url.Action("Index", "Catalog")>Детям</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <li><a href=@Url.Action("Contact", "Home")>Контакты</a></li>
+            <ul id="nav">
+                <li><a href="@Url.Action("Index", "Home")"><img src="~/Content/Images/Menu/big.png">Главная</a></li>
+                <li>
+                    <a class="sub" tabindex="1"><img src="~/Content/Images/Menu/big.png">Каталог</a><img src="~/Content/Images/Menu/up.gif">
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Catalog")"><img src="~/Content/Images/Menu/small.png">Женские</a></li>
+                        <li><a href="@Url.Action("Index", "Catalog")"><img src="~/Content/Images/Menu/small.png">Мужские</a></li>
+                        <li><a href="@Url.Action("Index", "Catalog")"><img src="~/Content/Images/Menu/small.png">Детские</a></li>
+                    </ul>
+                </li>
+                <li><a href="@Url.Action("Index", "Home")"><img src="~/Content/Images/Menu/big.png">Контакты</a></li>
             </ul>
-        </div>
+        </div>        
         <div class="container">
             <div class="brands">
                 <img src="~/Content/Images/brands/instreet.png" alt="instreet">

@@ -157,12 +157,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\brands\dixer.png" />
-    <Content Include="Content\Images\brands\instreet.png" />
-    <Content Include="Content\Images\brands\marcotozzi.png" />
-    <Content Include="Content\Images\brands\rieker.png" />
-    <Content Include="Content\Images\brands\thomasmunz.png" />
-    <Content Include="Content\Images\brands\zenden.png" />
+    <Content Include="Content\Images\Brands\dixer.png" />
+    <Content Include="Content\Images\Brands\instreet.png" />
+    <Content Include="Content\Images\Brands\marcotozzi.png" />
+    <Content Include="Content\Images\Brands\rieker.png" />
+    <Content Include="Content\Images\Brands\thomasmunz.png" />
+    <Content Include="Content\Images\Brands\zenden.png" />
     <Content Include="Content\Images\classic_1.jpg" />
     <Content Include="Content\Images\classic_1_small.jpg" />
     <Content Include="Content\Images\classic_1_small.png" />
@@ -172,6 +172,10 @@
     <Content Include="Content\Images\classic_3_small.jpg" />
     <Content Include="Content\Images\Hit.png" />
     <Content Include="Content\Images\Hrenden.jpg" />
+    <Content Include="Content\Images\Menu\big.png" />
+    <Content Include="Content\Images\Menu\down.gif" />
+    <Content Include="Content\Images\Menu\small.png" />
+    <Content Include="Content\Images\Menu\up.gif" />
     <Content Include="Content\Images\New.png" />
     <Content Include="Content\Images\Sale.png" />
     <Content Include="Content\Images\social.jpg" />
@@ -189,6 +193,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\GeekBrainsShop - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\functions.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
