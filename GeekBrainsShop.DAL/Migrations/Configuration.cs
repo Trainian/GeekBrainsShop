@@ -16,7 +16,9 @@ namespace GeekBrainsShop.DAL.Migrations
         protected override void Seed(GeekBrainsShop.DAL.Employees.LibraryContext context)
         {
             context.Footwear.AddOrUpdate(x => x.FootwearId,
-                new Footwear() { FootwearId = 1, Price = 1500, MinSize = 39, MaxSize = 46, VendorCode = "MX23-33X", ImageLink = @"/Content/Images/classic_1_small.jpg", TrademarkId = 1, IsSale = true, IsTop = false, IsNew = false, Subscribe = "asddf", SeasonId = 1 },
+                new Footwear() { FootwearId = 1, Price = 1500, MinSize = 39, MaxSize = 46, VendorCode = "MX23-33X", ImageLink = @"/Content/Images/classic_1_small.jpg", TrademarkId = 1, IsSale = true, IsTop = false, IsNew = false,
+                    Subscribe = "Мужские туфли ZENDEN collection выполнены из комбинированных материалов, благодаря чему сохраняется достойная цена и качество. Подошва выполнена из Резины, что позволит вам не скользить на поверхностях. Подклад выполнен из натуральных материалов, что значит для вас прекрасные ощущения в течении всего дня.",
+                    SeasonId = 1 },
                 new Footwear() { FootwearId = 2, Price = 2500, MinSize = 39, MaxSize = 46, VendorCode = "MX13-35X", ImageLink = @"/Content/Images/classic_2_small.jpg", TrademarkId = 1, SalePrice = 1500, IsSale = false, IsTop = true, IsNew = false, Subscribe = "asddf", SeasonId = 2 },
                 new Footwear() { FootwearId = 3, Price = 3500, MinSize = 40, MaxSize = 45, VendorCode = "LX23-32M", ImageLink = @"/Content/Images/classic_3_small.jpg", TrademarkId = 1, IsSale = true, IsTop = true, IsNew = false, Subscribe = "asddf", SeasonId = 1 },
                 new Footwear() { FootwearId = 4, Price = 1500, MinSize = 40, MaxSize = 46, VendorCode = "KL63-18L", ImageLink = @"/Content/Images/sport_1_small.jpg", TrademarkId = 4, SalePrice = 1500, IsSale = true, IsTop = true, IsNew = true, Subscribe = "asddf", SeasonId = 2 },

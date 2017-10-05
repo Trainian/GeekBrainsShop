@@ -2,8 +2,7 @@
 @{
     ViewBag.Title = "GeekBrainsShop";
 }
-
-    <div class="catalogs">
+    
         @foreach (var item in Model)
         {
             <a href="@Url.Action("Details", "Catalog", new { id = item.FootwearId})">
@@ -46,4 +45,3 @@
             </div>
         </a>
         }
-    </div>
